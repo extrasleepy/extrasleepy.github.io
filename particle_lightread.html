@@ -5,8 +5,8 @@
 <script src="justgage.1.0.1.min.js"></script>
 
 <script>
-var accessToken = "486edd39ff75e1ea2258702670f6e04dc78ad379";
-var deviceID = "260040000247343138333038"
+var accessToken = "86edd39ff75e1ea2258702670f6e04dc78ad379";
+var deviceID = "54ff72066672524860351167"
 var url = "https://api.particle.io/v1/devices/" + deviceID + "/volts";
 
 function callback(data, status){
@@ -35,7 +35,7 @@ var g = new JustGage({
     id: "gauge",
     value: 0,
     min: 0,
-    max: 1,
+    max: 3.3,
     title: "Volts"
 });
 getReading();
