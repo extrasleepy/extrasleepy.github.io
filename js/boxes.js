@@ -9,7 +9,7 @@ var h = window.innerHeight,
     num = Math.ceil((w + halfSize) / (sizeAndHalf)) * Math.ceil((h + halfSize) / (sizeAndHalf));
 
 var svg = d3.select('body').append('svg'),
-    colorScale = d3.scale.linear().domain([0,num]).range(['rgb(33,66,255)', 'rgb(255,0,0)']);
+    colorScale = d3.scale.linear().domain([0,num]).range(['rgb(0,66,255)', 'rgb(255,0,0)']);
 
 svg.attr('height', h)
    .attr('width', w)
