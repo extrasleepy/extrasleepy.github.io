@@ -1,23 +1,45 @@
-
-<!-- Replace your-device-ID-goes-here with your actual device ID
-and replace your-access-token-goes-here with your actual access token-->
-<!DOCTYPE>
 <html>
-  <body>
-  <center>
-  <br>
-  <br>
-  <br>
-  <form action="https://api.particle.io/v1/devices/260040000247343138333038/led?access_token=486edd39ff75e1ea2258702670f6e04dc78ad379" method="POST">
-    Tell your device what to do!<br>
-    <br>
-    <input type="radio" name="args" value="on">Turn the LED on.
-    <br>
-    <input type="radio" name="args" value="off">Turn the LED off.
-    <br>
-    <br>
-    <input type="submit" value="Do it!">
-  </form>
-  </center>
-  </body>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="raphael.2.1.0.min.js"></script>
+<script src="justgage.1.0.1.min.js"></script>
+
+<script>
+var accessToken = "486edd39ff75e1ea2258702670f6e04dc78ad379";
+var deviceID = "260040000247343138333038"
+var url = "https://api.spark.io/v1/devices/" + deviceID + "/volts";
+
+function callback(data, status){
+	if (status == "success") {
+		volts = parseFloat(data.result);
+		volts = volts.toFixed(2);
+		g.refresh(volts);
+		setTimeout(getReading, 1000);
+	}
+	else {
+		alert("There was a problem");
+	}
+}
+
+function getReading(){
+   	$.get(url, {access_token: accessToken}, callback);
+}
+</script>
+</head>
+
+<body>
+<div id="gauge" class="200x160px"></div>
+
+<script>
+var g = new JustGage({
+    id: "gauge",
+    value: 0,
+    min: 0,
+    max: 3.3,
+    title: "Volts"
+});
+getReading();
+</script>
+
+</body>
 </html>
