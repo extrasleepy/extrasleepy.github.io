@@ -17,9 +17,9 @@ function switchOff()
 	$.post(url, {params: "off", access_token: accessToken });
 }
 
-function switchMore()
+function switchFast()
 {
-	$.post(url, {params: "more", access_token: accessToken });
+	$.post(url, {params: "fast", access_token: accessToken });
 }
 
 
@@ -31,9 +31,9 @@ function switchMore()
 
 <h1>On/Off Control</h1>
 
-<input type="button" onClick="switchOn()" value="ON"/>
+<input type="button" onClick="switchOn()" value="BLINK"/>
 <input type="button" onClick="switchOff()" value="OFF"/>
-<input type="button" onClick="switchMore()" value="MORE"/>
+<input type="button" onClick="switchFast()" value="FAST"/>
 
 </body>
 </html>
