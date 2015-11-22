@@ -1,31 +1,16 @@
 <html>
-<head>
+  <head>
     <title>Spark Login Example</title>
-</head>
+  </head>
 
-<body>
-<div id="spark-login"/>
+  <body>
+    <div id="spark-login" />
 
-<script src="http://cdn.jsdelivr.net/sparkjs/0.5.2/spark.min.js"></script>
-<script>
-    var token = '486edd39ff75e1ea2258702670f6e04dc78ad379';
-    spark.on('login', function() {
-        //Get all events
-        spark.getEventStream(false, false, function(data) {
-            console.log("Event: " + JSON.stringify(data));
-        });
-        //Get your devices events
-        spark.getEventStream(false, 'mine', function(data) {
-            console.log("Event: " + JSON.stringify(data));
-        });
-        //Get test event for specific core
-        spark.getEventStream('test', 'CORE_ID', function(data) {
-            console.log("Event: " + JSON.stringify(data));
-        });
-    });
-    // Login as usual
-    //spark.login({ username: 'email@example.com', password: 'password'});
-    spark.login({ accessToken: token });
-</script>
-</body>
+    <script src="http://cdn.jsdelivr.net/sparkjs/0.5.10/spark.min.js"></script>
+    <script>
+      sparkLogin(function(data) {
+        console.log(data);
+      });
+    </script>
+  </body>
 </html>
