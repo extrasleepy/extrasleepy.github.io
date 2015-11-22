@@ -17,6 +17,13 @@ function switchOff()
 	$.post(url, {params: "off", access_token: accessToken });
 }
 
+function switchMore()
+{
+	$.post(url, {params: "more", access_token: accessToken });
+}
+
+
+
 </script>
 </head>
 
@@ -26,6 +33,7 @@ function switchOff()
 
 <input type="button" onClick="switchOn()" value="ON"/>
 <input type="button" onClick="switchOff()" value="OFF"/>
+<input type="button" onClick="switchmore()" value="MORE"/>
 
 </body>
 </html>
