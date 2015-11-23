@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+var accessToken = "486edd39ff75e1ea2258702670f6e04dc78ad379";
+var deviceID = "260040000247343138333038"
+var url = "https://api.particle.io/v1/devices/" + deviceID + "/volts";
+
+function callback(data, status){
+	if (status == "success") {
+		volts = parseFloat(data.result);
+		volts = volts.toFixed(2);
+		g.refresh(volts);
+		setTimeout(getReading, 1000);
+	}
+	else {
+		alert("There was a problem");
+	}
+}
+
+function getReading(){
+   	$.get(url, {access_token: accessToken}, callback);
+}
+</script>
+</head>
+
+<body>
+<script>
+var reading = getReading();
+document.write(reading);
+</script>
+
+</body>
+</html>
