@@ -1,6 +1,6 @@
 <html>
 <head>
-	<style>
+<style>
 	body {
 		margin: 0;
 		background-color: #404040;
@@ -116,30 +116,31 @@ function seizure()
 <body>
 	<div id="container">
 
-        <div class="button-main" onClick="switchOn()" value="ON"/>
-        	<div class="button-inside">
-            	<h1>A</h1>
-            </div>
-        </div>
-
-
         <div class="button-main" onClick="switchOff()" value="OFF"/>
         	<div class="button-inside">
-            	<h1>B</h1>
+            	<h1>Off</h1>
             </div>
         </div>
+
+				<div class="button-main" onClick="switchOn()" value="ON"/>
+					<div class="button-inside">
+							<h1>On</h1>
+						</div>
+				</div>
 
         <div class="button-main" onClick="switchFast()" value="FAST"/>
         	<div class="button-inside">
-            	<h1>C</h1>
+            	<h1>Fast</h1>
             </div>
         </div>
 
+				<div class="button-main" onClick="seizure()" value="SEIZURE"/>
+					<div class="button-inside">
+							<h1>Seizure</h1>
+						</div>
+				</div>
+
 	</div>
-
-<h1>On/Off Control</h1>
-<input type="button" onClick="seizure()" value="SEIZURE"/>
-
 
 </body>
 </html>
