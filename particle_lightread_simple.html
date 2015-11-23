@@ -11,6 +11,7 @@ function callback(data, status){
 	if (status == "success") {
 		volts = parseFloat(data.result);
 		volts = volts.toFixed(2);
+		document.write(volts);
 		setTimeout(getReading, 1000);
 	}
 	else {
@@ -27,7 +28,7 @@ function getReading(){
 <body>
 <script>
 getReading();
-document.write(volts);
+
 </script>
 
 </body>
