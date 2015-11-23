@@ -11,7 +11,6 @@ function callback(data, status){
 	if (status == "success") {
 		volts = parseFloat(data.result);
 		volts = volts.toFixed(2);
-		g.refresh(volts);
 		setTimeout(getReading, 1000);
 	}
 	else {
