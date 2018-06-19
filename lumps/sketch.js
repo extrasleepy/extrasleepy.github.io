@@ -50,7 +50,7 @@ function setup() {
   strokeWeight(1);
   fill(255);
   textFont(myFont);
-  text("world of lumps",60,55);
+  text("land of lumps",30,55);
 
   textFont(my_d_Font);
   inputA = createInput();
