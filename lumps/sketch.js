@@ -87,7 +87,7 @@ function setup() {
   saveButton.style('border', '3px solid black');
 
   buttonA = createButton('dialog');
-  buttonA.position(inputA.x + inputA.width, inputA.y-3);
+  buttonA.position(inputA.x + inputA.width, inputA.y-3.5);
   buttonA.mousePressed(dialogA);
 
   buttonA.style('display', 'inline - block');
@@ -109,7 +109,7 @@ function setup() {
   inputA2.style('font', '20px Courier');
 
   buttonA2 = createButton('dialog');
-  buttonA2.position(inputA2.x + inputA2.width, inputA2.y-3);
+  buttonA2.position(inputA2.x + inputA2.width, inputA2.y-3.5);
   buttonA2.mousePressed(dialogA2);
 
   buttonA2.style('display', 'inline - block');
@@ -131,7 +131,7 @@ function setup() {
   inputA3.style('font', '20px Courier');
 
   buttonA3 = createButton('dialog');
-  buttonA3.position(inputA3.x + inputA3.width, inputA3.y-3);
+  buttonA3.position(inputA3.x + inputA3.width, inputA3.y-3.5);
   buttonA3.mousePressed(dialogA3);
 
   buttonA3.style('display', 'inline - block');
