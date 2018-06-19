@@ -27,8 +27,8 @@ let off = 4;
 let eye = 0;
 
 function preload() {
-  my_d_Font = loadFont('assets/SFToontime-Bold.TTF');
-  myFont = loadFont('assets/SFToontimeShaded.TTF');
+  my_d_Font = loadFont('assets/SFToontime-Bold.ttf');
+  myFont = loadFont('assets/SFToontimeShaded.ttf');
 }
 
 function setup() {
