@@ -372,21 +372,22 @@ function characters(){
   chaCol2 = random(0, 200);
   chaSize = random(-30, 30);
   off = 4;
+  mvdwn = 5;
 
   noStroke();
 
   fill(chaCol2, chaCol - 50, chaCol - 50);
-  scribble.scribbleEllipse(95, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110, 285, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110, 285 + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol-70, chaCol-70);
-  scribble.scribbleEllipse(95 + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + (off * 2), 285 - (off * 2), 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + (off * 2), 285 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol, chaCol);
-  scribble.scribbleEllipse(95+off, 335-off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125+off, 335-off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110+off, 285-off, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + off, 285 - off + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol - 100, 0, chaCol - 100);
   eye = random(5, 25);
   scribble.scribbleEllipse(95, 275, eye, eye);
@@ -404,15 +405,15 @@ function characters(){
   cha2Col = random(100, 200);
   cha2Col2 = random(0, 200);
   fill(cha2Col, cha2Col, cha2Col2);
-  scribble.scribbleEllipse(280, 335, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280, 285, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280, 335+mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280, 285 + mvdwn, 80 + cha2Size, 80 + cha2Size);
   cha2Col = random(100, 200);
   fill(cha2Col - 70, cha2Col - 70, cha2Col2);
-  scribble.scribbleEllipse(280 - (off * 2), 335 - (off * 2), 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 - (off * 2), 285 - (off * 2), 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 - (off * 2), 335 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 - (off * 2), 285 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
   fill(cha2Col - 50, cha2Col - 50, cha2Col2);
-  scribble.scribbleEllipse(280 - off, 335 - off, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 - off, 285 - off, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 - off, 335 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 - off, 285 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
   fill(cha2Col-100, cha2Col-100, 0);
   eye2 = random(5, 25);
   scribble.scribbleEllipse(260, 275, eye2, eye2);
@@ -433,17 +434,17 @@ function characters(){
   eye +=15;
 
   fill(chaCol2, chaCol - 50, chaCol - 50);
-  scribble.scribbleEllipse(95+charx, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx, 285, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx, 285 + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol - 70, chaCol - 70);
-  scribble.scribbleEllipse(95 + charx + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx + (off * 2), 285 - (off * 2), 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx + (off * 2), 285 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol, chaCol);
-  scribble.scribbleEllipse(95 + charx + off, 335 - off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx + off, 335 - off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx + off, 285 - off, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx + off, 285 - off + mvdwn, 80 + chaSize, 80 + chaSize);
 
   fill(chaCol - 100, 0, chaCol - 100);
   scribble.scribbleEllipse(95 + charx, 275, eye, eye);
@@ -458,16 +459,16 @@ function characters(){
 
   //character 2
   fill(cha2Col, cha2Col, cha2Col2);
-  scribble.scribbleEllipse(280 + charx, 335, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx, 285, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx, 335 + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx, 285 + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 70, cha2Col - 70, cha2Col2);
-  scribble.scribbleEllipse(280 + charx - (off * 2), 335 - (off * 2), 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx - (off * 2), 285 - (off * 2), 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - (off * 2), 335 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - (off * 2), 285 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 50, cha2Col - 50, cha2Col2);
-  scribble.scribbleEllipse(280 + charx - off, 335 - off, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx - off, 285 - off, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - off, 335 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - off, 285 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 100, cha2Col - 100, 0);
   scribble.scribbleEllipse(260 + charx, 275, eye2, eye2);
@@ -489,17 +490,17 @@ function characters(){
   eye2 += 15;
 
   fill(chaCol2, chaCol - 50, chaCol - 50);
-  scribble.scribbleEllipse(95 + charx, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx, 335, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx, 285, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx, 335 + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx, 285 + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol - 70, chaCol - 70);
-  scribble.scribbleEllipse(95 + charx + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx + (off * 2), 335 - (off * 2), 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx + (off * 2), 285 - (off * 2), 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx + (off * 2), 335 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx + (off * 2), 285 - (off * 2) + mvdwn, 80 + chaSize, 80 + chaSize);
   fill(chaCol2, chaCol, chaCol);
-  scribble.scribbleEllipse(95 + charx + off, 335 - off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(125 + charx + off, 335 - off, 80 + chaSize, 80 + chaSize);
-  scribble.scribbleEllipse(110 + charx + off, 285 - off, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(95 + charx + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(125 + charx + off, 335 - off + mvdwn, 80 + chaSize, 80 + chaSize);
+  scribble.scribbleEllipse(110 + charx + off, 285 - off + mvdwn, 80 + chaSize, 80 + chaSize);
 
   fill(chaCol - 100, 0, chaCol - 100);
   scribble.scribbleEllipse(95 + charx, 275, eye, eye);
@@ -514,16 +515,16 @@ function characters(){
 
   //character 2
   fill(cha2Col, cha2Col, cha2Col2);
-  scribble.scribbleEllipse(280 + charx, 335, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx, 285, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx, 335 + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx, 285 + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 70, cha2Col - 70, cha2Col2);
-  scribble.scribbleEllipse(280 + charx - (off * 2), 335 - (off * 2), 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx - (off * 2), 285 - (off * 2), 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - (off * 2), 335 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - (off * 2), 285 - (off * 2) + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 50, cha2Col - 50, cha2Col2);
-  scribble.scribbleEllipse(280 + charx - off, 335 - off, 80 + cha2Size, 80 + cha2Size);
-  scribble.scribbleEllipse(280 + charx - off, 285 - off, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - off, 335 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
+  scribble.scribbleEllipse(280 + charx - off, 285 - off + mvdwn, 80 + cha2Size, 80 + cha2Size);
 
   fill(cha2Col - 100, cha2Col - 100, 0);
   scribble.scribbleEllipse(260 + charx, 275, eye2, eye2);
