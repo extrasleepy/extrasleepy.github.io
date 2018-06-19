@@ -335,7 +335,7 @@ function characters(){
   
   let dotsLen = random(100, 270);
   let dotsY = random(210,250);
-  let dotsLenY = random(100, 172);
+  let dotsLenY = random(100, 170);
   let density  = random(3,10);
   fill(random(20, 255), random(20, 255), random(20, 255), random(20, 255));   //draw textural dot pattern
 
@@ -347,7 +347,7 @@ function characters(){
 
   dotsLen = random(100, 270);
   dotsY = random(210, 250);
-  dotsLenY = random(100, 172);
+  dotsLenY = random(100, 170);
   density = random(3, 10);
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
@@ -358,7 +358,7 @@ function characters(){
 
   dotsLen = random(100, 270);
   dotsY = random(210, 250);
-  dotsLenY = random(100, 172);
+  dotsLenY = random(100, 170);
   density = random(3, 10);
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
