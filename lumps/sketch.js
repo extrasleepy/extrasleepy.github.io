@@ -32,10 +32,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1150, 550);
-  background(0);
+  createCanvas(1150, 540);
+  background(255);
   noFill();
-  stroke(255);
+  stroke(0);
   strokeWeight(2);
 
   scribble.bowing = 0.1;
@@ -48,7 +48,7 @@ function setup() {
 
   textSize(55);
   strokeWeight(1);
-  fill(255);
+  fill(0);
   textFont(myFont);
   text("land of lumps",30,55);
 
@@ -57,7 +57,7 @@ function setup() {
   inputA.position(36, 465);
   inputA.size(280, 15);
 
-  inputA.style('background-color', 'black');
+  inputA.style('background-color', 'white');
   inputA.style('border', '1px solid gray');
   inputA.style('border-radius','0px');
   inputA.style('padding','5px');
@@ -71,9 +71,9 @@ function setup() {
   charButton.style('display', 'inline - block');
   charButton.style('font-size','15px');
   charButton.style('margin', '4px');
-  charButton.style('background-color', 'black');
-  charButton.style('color', 'white');
-  charButton.style('border', '2px solid white');
+  charButton.style('background-color', 'white');
+  charButton.style('color', 'black');
+  charButton.style('border', '3px solid black');
 
   saveButton = createButton('save comic');
   saveButton.position(charButton.x + 100, inputA.y + 40);
@@ -82,9 +82,9 @@ function setup() {
   saveButton.style('display', 'inline - block');
   saveButton.style('font-size', '15px');
   saveButton.style('margin', '4px');
-  saveButton.style('background-color', 'black');
-  saveButton.style('color', 'white');
-  saveButton.style('border', '2px solid white');
+  saveButton.style('background-color', 'white');
+  saveButton.style('color', 'black');
+  saveButton.style('border', '3px solid black');
 
   buttonA = createButton('dialog');
   buttonA.position(inputA.x + inputA.width, inputA.y-3);
@@ -93,15 +93,15 @@ function setup() {
   buttonA.style('display', 'inline - block');
   buttonA.style('font-size', '15px');
   buttonA.style('margin', '4px');
-  buttonA.style('background-color', 'black');
-  buttonA.style('color', 'white');
-  buttonA.style('border', '2px solid white');
+  buttonA.style('background-color', 'white');
+  buttonA.style('color', 'black');
+  buttonA.style('border', '3px solid black');
 
   inputA2 = createInput();
   inputA2.position(405, 465);
   inputA2.size(280, 15);
 
-  inputA2.style('background-color', 'black');
+  inputA2.style('background-color', 'white');
   inputA2.style('border', '1px solid gray');
   inputA2.style('border-radius', '0px');
   inputA2.style('padding', '5px');
@@ -115,15 +115,15 @@ function setup() {
   buttonA2.style('display', 'inline - block');
   buttonA2.style('font-size', '15px');
   buttonA2.style('margin', '4px');
-  buttonA2.style('background-color', 'black');
-  buttonA2.style('color', 'white');
-  buttonA2.style('border', '2px solid white');
+  buttonA2.style('background-color', 'white');
+  buttonA2.style('color', 'black');
+  buttonA2.style('border', '3px solid black');
 
   inputA3 = createInput();
   inputA3.position(775, 465);
   inputA3.size(280, 15);
 
-  inputA3.style('background-color', 'black');
+  inputA3.style('background-color', 'white');
   inputA3.style('border', '1px solid gray');
   inputA3.style('border-radius', '0px');
   inputA3.style('padding', '5px');
@@ -137,9 +137,9 @@ function setup() {
   buttonA3.style('display', 'inline - block');
   buttonA3.style('font-size', '15px');
   buttonA3.style('margin', '4px');
-  buttonA3.style('background-color', 'black');
-  buttonA3.style('color', 'white');
-  buttonA3.style('border', '2px solid white');
+  buttonA3.style('background-color', 'white');
+  buttonA3.style('color', 'black');
+  buttonA3.style('border', '3px solid black');
 
   characters()
 }
@@ -148,16 +148,16 @@ function draw(){
 }
 
 function dialogA() {
-  fill(0);
+  fill(255);
   noStroke();
   rect(32, 80, 330, 141);  //clear dialog
 
-  stroke(255);
+  stroke(0);
   strokeWeight(2);
 
   wordbubbles(0, random(0, 30));
 
-  fill(255, 255, 255);
+  fill(0, 0, 0);
   textSize(16);
   textAlign(LEFT);
   textA = (inputA.value());
@@ -186,7 +186,7 @@ function dialogA() {
   }
 
   textB = (total);
-  fill(255, 255, 255);
+  fill(0);
   noStroke();
   textSize(16);
   textAlign(RIGHT);
@@ -195,16 +195,16 @@ function dialogA() {
 }
 
 function dialogA2() {
-  fill(0);
+  fill(255);
   noStroke();
   rect(400, 80, 330, 130); //clear dialog
 
-  stroke(255);
+  stroke(0);
   strokeWeight(2);
 
   wordbubbles(370,random(0,30));
 
-  fill(255, 255, 255);
+  fill(0);
   noStroke();
   textSize(16);
   textAlign(LEFT);
@@ -234,7 +234,7 @@ function dialogA2() {
    }
 
   textB2 = (total2);
-  fill(255, 255, 255);
+  fill(0);
   noStroke();
   textSize(16);
   textAlign(RIGHT);
@@ -243,15 +243,15 @@ function dialogA2() {
 }
 
 function dialogA3() {
-  fill(0);
+  fill(255);
   noStroke();
   rect(770, 80, 340, 130);
-  stroke(255);
+  stroke(0);
   strokeWeight(2);
 
   wordbubbles(740, random(0, 30));
 
-  fill(255, 255, 255);
+  fill(0);
   noStroke();
   textSize(16);
   textAlign(LEFT);
@@ -281,7 +281,7 @@ function dialogA3() {
   }
 
   textB3 = (total3);
-  fill(255, 255, 255);
+  fill(0);
   noStroke();
   textSize(16);
   textAlign(RIGHT);
@@ -321,32 +321,32 @@ function wordbubbles(bubx,emx){
    scribble.scribbleLine(320 + bubx - emx, 175, 290 + bubx - emx, 200);
 
    noStroke();
-   fill(0);
+   fill(255);
    rect(67 + bubx + emx, 170, 19, 10,10);
    rect(294 + bubx - emx, 170, 19, 10,10);
 }
 
 function characters(){
   noStroke();
-  fill(0);
+  fill(255);
   rect(32, 205, 335, 212); //clear characters
   rect(400, 205, 335, 212); 
   rect(770, 205, 340, 212);
   
   let dotsLen = random(100, 270);
-  let dotsY = random(210,250);
+  let dotsY = random(210,248);
   let dotsLenY = random(100, 170);
   let density  = random(3,10);
-  fill(random(20, 255), random(20, 255), random(20, 255), random(20, 255));   //draw textural dot pattern
+  fill(random(0, 125), random(0, 125), random(0, 125), random(20, 255)); //draw textural dot pattern
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
     for (var i = 37; i < 362; i += density){
-      ellipse(i,j,2,2);
+      ellipse(i,j,3,3);
     }
   }
 
   dotsLen = random(100, 270);
-  dotsY = random(210, 250);
+  dotsY = random(210, 248);
   dotsLenY = random(100, 170);
   density = random(3, 10);
 
@@ -357,13 +357,13 @@ function characters(){
   }
 
   dotsLen = random(100, 270);
-  dotsY = random(210, 250);
+  dotsY = random(210, 248);
   dotsLenY = random(100, 170);
   density = random(3, 10);
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
     for (var i = 48; i < 372; i += density){
-      ellipse(i+730, j, 2, 2);
+      ellipse(i+730, j, 3, 3);
     }
   }
 
