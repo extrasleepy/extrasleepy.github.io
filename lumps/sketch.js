@@ -329,11 +329,10 @@ function wordbubbles(bubx,emx){
 function characters(){
   noStroke();
   fill(0);
-  rect(32, 205, 330, 210); //clear characters
-  rect(400, 205, 330, 210); 
-  rect(770, 205, 340, 210);
+  rect(32, 205, 335, 212); //clear characters
+  rect(400, 205, 335, 212); 
+  rect(770, 205, 340, 212);
   
-  let dotsX = random(50, 100);
   let dotsLen = random(100, 270);
   let dotsY = random(210,250);
   let dotsLenY = random(100, 172);
@@ -341,31 +340,29 @@ function characters(){
   fill(random(20, 255), random(20, 255), random(20, 255), random(20, 255));   //draw textural dot pattern
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = dotsX; i < dotsX + dotsLen; i += density){
+    for (var i = 37; i < 362; i += density){
       ellipse(i,j,2,2);
     }
   }
 
-  dotsX = random(50, 100);
   dotsLen = random(100, 270);
   dotsY = random(210, 250);
   dotsLenY = random(100, 172);
   density = random(3, 10);
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = dotsX; i < dotsX + dotsLen; i += density){
+    for (var i = 48; i < 372; i += density){
       ellipse(i+360, j, 2, 2);
     }
   }
 
-  dotsX = random(50, 100);
   dotsLen = random(100, 270);
   dotsY = random(210, 250);
   dotsLenY = random(100, 172);
   density = random(3, 10);
 
   for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = dotsX; i < dotsX + dotsLen; i += density){
+    for (var i = 48; i < 372; i += density){
       ellipse(i+730, j, 2, 2);
     }
   }
