@@ -418,8 +418,8 @@ function characters(){
   ellipse(95+2, 275, eye/2, eye/2);   //whites of eyes
   ellipse(125+2, 275, eye/2, eye/2);
   fill(0,0,0);
-  ellipse(95 + 2, 275, eye / 4, eye / 4);   //pupils
-  ellipse(125 + 2, 275, eye / 4, eye / 4);
+  ellipse(96 + 2, 275, eye / 4, eye / 4);   //pupils
+  ellipse(126 + 2, 275, eye / 4, eye / 4);
 
   //2
   cha2Size = random(-30, 30);
@@ -444,8 +444,8 @@ function characters(){
   ellipse(260 - 2, 275, eye2 / 2, eye2 / 2);   //whites of eyes
   ellipse(280 - 2, 275, eye2 / 2, eye2 / 2);
   fill(0, 0, 0);
-  ellipse(260 - 2 , 275, eye2 / 4, eye2 / 4);   //pupils
-  ellipse(280 - 2, 275, eye2 / 4, eye2 / 4);
+  ellipse(259 - 2 , 275, eye2 / 4, eye2 / 4);   //pupils
+  ellipse(279 - 2, 275, eye2 / 4, eye2 / 4);
 
   //2nd frame
   //character 1
@@ -475,8 +475,8 @@ function characters(){
   ellipse(95 + charx + 2, 275, eye / 2, eye / 2); //whites of eyes
   ellipse(125 + charx + 2, 275, eye / 2, eye / 2);
   fill(0, 0, 0);
-  ellipse(95 + charx + 2, 275, eye / 4, eye / 4); //pupils
-  ellipse(125 + charx + 2, 275, eye / 4, eye / 4);
+  ellipse(96 + charx + 2, 275, eye / 4, eye / 4); //pupils
+  ellipse(126 + charx + 2, 275, eye / 4, eye / 4);
 
   //character 2
   fill(cha2Col, cha2Col, cha2Col2);
@@ -499,8 +499,8 @@ function characters(){
   ellipse(260 + charx - 2, 275, eye2 / 2, eye2 / 2); //whites of eyes
   ellipse(280 + charx - 2, 275, eye2 / 2, eye2 / 2);
   fill(0, 0, 0);
-  ellipse(260 + charx - 2, 275, eye2 / 4, eye2 / 4); //pupils
-  ellipse(280 + charx - 2, 275, eye2 / 4, eye2 / 4);
+  ellipse(259 + charx - 2, 275, eye2 / 4, eye2 / 4); //pupils
+  ellipse(279 + charx - 2, 275, eye2 / 4, eye2 / 4);
 
   //3rd frame
   //character 1
