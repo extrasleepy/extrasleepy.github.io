@@ -33,7 +33,7 @@ function preload() {
 
 function setup() {
   createCanvas(1150, 540);
-  background(255);
+  background('#efeee8');
   noFill();
   stroke(0);
   strokeWeight(2);
@@ -148,7 +148,7 @@ function draw(){
 }
 
 function dialogA() {
-  fill(255);
+  fill('#efeee8');
   noStroke();
   rect(32, 80, 330, 141);  //clear dialog
 
@@ -195,7 +195,7 @@ function dialogA() {
 }
 
 function dialogA2() {
-  fill(255);
+  fill('#efeee8');
   noStroke();
   rect(400, 80, 330, 130); //clear dialog
 
@@ -243,7 +243,7 @@ function dialogA2() {
 }
 
 function dialogA3() {
-  fill(255);
+  fill('#efeee8');
   noStroke();
   rect(770, 80, 340, 130);
   stroke(0);
@@ -310,62 +310,83 @@ function findNearest(word, n) {
 
 
 function wordbubbles(bubx,emx){
+  
+  stroke(0);
+  strokeWeight(2);
 
-   scribble.roughness = 1;
-   scribble.scribbleRoundedRect(110 + bubx, 125, 160, 100, 20);
-   scribble.scribbleLine(60 + bubx + emx, 175, 120 + bubx - emx, 200);
-   scribble.scribbleLine(90 + bubx + emx, 175, 120 + bubx - emx, 200);
+  scribble.roughness = 1;
+  scribble.scribbleRoundedRect(110 + bubx, 125, 160, 100, 20);
+  scribble.scribbleLine(60 + bubx + emx, 175, 120 + bubx - emx, 200);
+  scribble.scribbleLine(90 + bubx + emx, 175, 120 + bubx - emx, 200);
 
-   scribble.scribbleRoundedRect(290 + bubx, 125, 160, 100, 20);
-   scribble.scribbleLine(290 + bubx - emx, 175, 290 + bubx - emx, 200);
-   scribble.scribbleLine(320 + bubx - emx, 175, 290 + bubx - emx, 200);
+  scribble.scribbleRoundedRect(290 + bubx, 125, 160, 100, 20);
+  scribble.scribbleLine(290 + bubx - emx, 175, 290 + bubx - emx, 200);
+  scribble.scribbleLine(320 + bubx - emx, 175, 290 + bubx - emx, 200);
 
-   noStroke();
-   fill(255);
-   rect(67 + bubx + emx, 170, 19, 10,10);
-   rect(294 + bubx - emx, 170, 19, 10,10);
+  noStroke();
+  fill('#efeee8');
+  rect(67 + bubx + emx, 170, 19, 10,10);
+  rect(294 + bubx - emx, 170, 19, 10,10);
 }
 
 function characters(){
   noStroke();
-  fill(255);
+  fill('#efeee8');
   rect(32, 205, 335, 212); //clear characters
-  rect(400, 205, 335, 212); 
+  rect(400, 205, 337, 212); 
   rect(770, 205, 340, 212);
   
-  let dotsLen = random(100, 270);
-  let dotsY = random(210,248);
-  let dotsLenY = random(100, 170);
-  let density  = random(3,10);
-  fill(random(0, 125), random(0, 125), random(0, 125), random(20, 255)); //draw textural dot pattern
+  // let dotsLen = random(100, 270);
+  // let dotsY = random(210,248);
+  // let dotsLenY = random(100, 170);
+  // let density  = random(3,10);
+  // fill(random(0, 125), random(0, 125), random(0, 125), random(20, 255)); //draw textural dot pattern
 
-  for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = 37; i < 362; i += density){
-      ellipse(i,j,3,3);
-    }
-  }
+  // for (var j = dotsY; j < dotsY + dotsLenY; j += density){
+  //   for (var i = 37; i < 362; i += density){
+  //     ellipse(i,j,3,3);
+  //   }
+  // }
 
-  dotsLen = random(100, 270);
-  dotsY = random(210, 248);
-  dotsLenY = random(100, 170);
-  density = random(3, 10);
+  // dotsLen = random(100, 270);
+  // dotsY = random(210, 248);
+  // dotsLenY = random(100, 170);
+  // density = random(3, 10);
 
-  for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = 48; i < 372; i += density){
-      ellipse(i+360, j, 2, 2);
-    }
-  }
+  // for (var j = dotsY; j < dotsY + dotsLenY; j += density){
+  //   for (var i = 48; i < 372; i += density){
+  //     ellipse(i+360, j, 2, 2);
+  //   }
+  // }
 
-  dotsLen = random(100, 270);
-  dotsY = random(210, 248);
-  dotsLenY = random(100, 170);
-  density = random(3, 10);
+  // dotsLen = random(100, 270);
+  // dotsY = random(210, 248);
+  // dotsLenY = random(100, 170);
+  // density = random(3, 10);
 
-  for (var j = dotsY; j < dotsY + dotsLenY; j += density){
-    for (var i = 48; i < 372; i += density){
-      ellipse(i+730, j, 3, 3);
-    }
-  }
+  // for (var j = dotsY; j < dotsY + dotsLenY; j += density){
+  //   for (var i = 48; i < 372; i += density){
+  //     ellipse(i+730, j, 3, 3);
+  //   }
+  // }
+
+  let xCoords = [40, 360, 360, 40];
+  let yCoords = [227, 227, 410, 410];
+  let gap = random(5,15);
+  let angle = random(360);
+  strokeWeight(random(8));
+  stroke(random(100,255), random(100,255), random(100,255), random(50,255));
+  scribble.scribbleFilling(xCoords, yCoords, gap, angle);
+
+  xCoords = [410,730,730,410];
+  yCoords = [227, 227, 410, 410];
+  angle = random(360);
+  scribble.scribbleFilling(xCoords, yCoords, gap, angle);
+
+  xCoords = [775, 1100, 1100, 775];
+  yCoords = [227, 227, 410, 410];
+  angle = random(360);
+  scribble.scribbleFilling(xCoords, yCoords, gap, angle);
 
   //character 1
   chaCol = random(100, 200);
