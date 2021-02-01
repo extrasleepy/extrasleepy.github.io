@@ -5,9 +5,6 @@ let c
 let r
 let g
 let b
-var currentMillis
-var previousMillis = 0
-var interval = 2000
 let pick = 0
 
 let words =['squid','flounder','clam','krill','prawn']
@@ -21,6 +18,10 @@ function setup() {
 }
 
 function draw() {
+  var currentMillis
+  var previousMillis
+  var interval = 2000
+
   for (let i = 0; i < 9; i++) {
     x=random(0,width);
     y=random(0,height);
