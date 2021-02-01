@@ -5,9 +5,9 @@ let c
 let r
 let g
 let b
-let currentMillis
-let previousMillis = 0
-let interval = 2000
+var currentMillis
+var previousMillis = 0
+var interval = 2000
 let pick = 0
 
 let words =['squid','flounder','clam','krill','prawn']
